@@ -19,6 +19,15 @@ app.get('/', (req, res)=>{
    res.sendFile(`${__dirname}/cliente/index.html`)
 })
 
+app.get('auth/login', (req,res)=>{
+    res.sendFile(`${__dirname}/cliente/auth/login.html`)
+})
+
+app.get('auth/register', (req,res)=>{
+    res.sendFile(`${__dirname}/cliente/auth/register.html`)
+})
+
+
 server.listen(3000, ()=>{
     console.log("The Sever is successful run in http://localhost:3000");
 })

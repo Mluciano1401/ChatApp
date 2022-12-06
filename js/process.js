@@ -17,4 +17,4 @@ function sendmsg(){
         window.scroll(0, document.body.scrollHeight)
     })
 }
-sendmsg()
+module.exports = {sendmsg};
